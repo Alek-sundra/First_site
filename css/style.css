@@ -538,7 +538,7 @@ td:last-child{
    height: 45px;
    max-width: 45px;   
    right: 5px;
-   bottom:-60px; 
+   bottom:-55px; 
    background: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(0, 81, 155, 0.4) 100%), #00FFE0;
    box-shadow: 0 4px 10px rgba(255, 124, 163, 0.5);
    border: none;   
