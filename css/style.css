@@ -1,0 +1,626 @@
+/*
+  border:solid 1px red;
+*/
+body{
+  padding: 0;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 500;
+}
+a:hover{
+  color: #00FFE0;
+  text-decoration: none;
+}
+.row div{
+  padding: 0;
+}
+img{
+  width:100%;
+  height: 100%;
+}
+.parts{
+  margin-top: 1em;
+  text-align: center;
+}
+.line{
+  height: 3px;
+  border: none;
+  width: 50px;
+  background-color: #FF5977; 
+  margin-top: 2em; 
+}
+.ptitle, .sale, .ServName{
+  font-size: 28px;
+}
+.logo, .modal-body u, .register, .mastername, .info span, .clientText span, .reference, .adress-title{
+  font-size: 24px;
+}
+.nav-link, .callme p, .modal-body input, .sendbttn, .about, .textcard span, .clientText, .adrss{
+  font-size: 18px;
+}
+.ordercall, .slogan, .info p, table{
+  font-size: 14px; 
+}
+/*Navigation and introduction*/
+.main{
+  padding: 0;
+}
+.master{
+  height: 900px;
+  padding: 0;
+  background-image: url(../img/masterfix.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-color: #FF5977;
+}
+/*Logotype*/
+.logo{
+  margin-top: .5em;
+  margin-bottom: 0;  
+  color: #00FFE0;
+}
+.logotxt{   
+  font-size: 12px;
+  color: #FFFFFF;
+  line-height: 0;
+  margin: 0;
+  min-width: 82px;
+}
+/*Nav panel*/
+.navbar{
+  padding: 0;
+}
+.navbar-collapse{
+    text-align: center;
+}
+.nav-link{  
+  margin-top: .5em;
+  color: #FFFFFF;
+}
+.navbar-toggler{
+  width: 35px;
+  height: 35px;
+  margin-top: 1%;
+  padding: 0;
+  border: none;
+  margin: auto;
+}
+.navbar-toggler .icon{
+  display: block;
+  height: 3px;  
+  width: 100%;
+  background-color: #FFFFFF;
+  margin-top:8px;
+}
+.navbar-toggler .mid{
+  background-color: #00FFE0;
+  width: 50%;
+  margin-left: 25%;
+}
+/*Call me*/
+.callme p{
+  margin-top: 1em; 
+  color: #FFFFFF;
+  width: 50%;
+  max-width: 143px;
+  float: left;
+}
+.callme .number, .adrss span{
+  color: #00FFE0;
+}
+.ordercall{
+  width: 45%;
+  max-width: 120px;
+  height: 45px;
+  margin-left: 4%;
+  margin-top: .5em;
+  border: 2px solid #00FFE0;
+  border-radius: 60px;
+  color: #FFFFFF; 
+  background-color: #00FFE0;
+  background-color: rgba(255,255,255,0); 
+}
+.ordercall:hover{
+  color: #00FFE0;
+}
+/*Modal*/
+
+.modal-dialog div{
+  margin-top: 4px;
+  margin-bottom: 4px;
+  margin-left: auto;
+  text-align: center;
+}
+.modal-dialog .close{
+  background-color: #00FFE0;
+  width: 30px;
+  height: 30px;
+}
+.modal-content{
+  width:100%;
+  padding: 5%;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(0, 81, 155, 0.4) 100%), #00FFE0;
+  border-radius: 50%;  
+}
+.modal-body{
+  width:100%;
+  background: #FFFFFF;
+  border-radius: 50%; 
+}
+.modal-body u{
+  width: 100%;
+  font-weight: bold;
+  text-align: center;
+}
+.modal-body input, .sendbttn{
+  width: 50%;
+  height: 75px;
+  border: 2px solid #00FFE0;
+  border-radius: 60px;
+  color: black;
+  text-align: center;
+}
+.modal-body .sendbttn{
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(0, 81, 155, 0.4) 100%), #00FFE0;
+  border: none;
+} 
+/*Button*/
+.register{
+  width: 100%;
+  max-width: 200px;
+  height: 75px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(0, 81, 155, 0.4) 100%), #00FFE0;
+  box-shadow: 0 2px 4px #003844;
+  border-radius: 60px;
+  color: #FFFFFF;
+  text-align: center;
+  border: none;
+}
+/*Offer*/
+.offer_name{
+  margin-top: 15%;
+}
+.blueline{
+  width: 45%;
+  max-width: 150px;
+  height: 3px;
+  border: none;
+  margin: 0;
+  margin-left: 1.5em;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(0, 81, 155, 0.4) 100%), #00FFE0;
+}
+.mastername{
+  font-weight: bold;
+  color: #00FFE0;
+}
+.about{  
+  font-weight: bold;
+  color: #FFFFFF;
+  line-height: 0;
+}
+.slogan{
+  color: #FFFFFF;
+  line-height: 0;
+}
+.sale{
+  font-weight: bold;
+  color: #00FFE0;
+}
+/*Advantage*/
+.forma{
+  margin-top: -200px;
+  color: #FFFFFF;
+}
+.forma .row{
+   background-color: #FF5977;
+}
+.formaimg{
+  max-width: 570px;
+  max-height: 500px;
+}
+.section div{
+  padding: 10px;
+  margin: 7px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+}
+.section>div{
+  position: absolute; 
+  background-color: #00FFE0;
+  background-color: rgba(255, 255, 255, 0.4);
+  max-width: 120px;
+}
+.section{
+  position: relative;
+}
+.info button{
+  margin-left: 10px;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+.info p{
+  margin-top: 1em;
+  margin-left: 28%;
+  margin-bottom: 3px;
+}
+/*Service and price*/
+.Serv{
+  margin-top: 1em;
+}
+.card{
+  max-width: 360px;
+  box-shadow: 0 4px 8px rgba(255, 89, 119, 0.5); 
+  z-index: 10;
+  transition: 2s;
+}
+.card img{
+  max-width: 360px;
+  max-height: 360px;
+}
+.textcard{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  max-width: 360px;
+  top: 0;
+  background-color: #FF5977; 
+  border-radius: 1%;
+  z-index: 5;
+  color: #FFFFFF;
+}
+.Serv:hover .card{
+  z-index: 1;
+  transform: rotateY(180deg);
+}
+.Right{
+  left: 5.26%;
+}
+.Central{
+  left: 2.63%;
+  right: 2.63%;
+}
+.ServName{
+  position: absolute;
+  font-weight: bold;
+  color: #FFFFFF;
+  top: 50%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: -.5em auto auto auto;
+}
+table{
+  width: 100%;
+  max-width: 340px;
+  text-align: left;  
+  margin: 10px;
+  line-height: 1.1em;
+}
+td:last-child{
+  color: #00FFE0;
+  width: 25%;
+}
+.textcard span{
+  font-weight: bold;
+}
+/*My Works - gallery*/
+.btningallery{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: -37.5px auto auto auto;
+}
+.galleryBig{
+  max-width: 555px;
+  max-height: 570px;
+}
+.bigpick{
+    text-align: left;
+}
+.gallery img{
+  max-width: 262.5px;
+  max-height: 270px;
+}
+.gallery{
+  text-align: right;
+}
+.gallery11, .gallery21, .gallery33, .Doc3{
+  margin-right: 2.63%;
+}
+.gallery31, .Doc1{
+  margin-right: 7.89%
+}
+.gallery32, .Doc2{
+  margin-right: 5.26%
+}
+.gallery21, .gallery22{
+  margin-top: 10.5%;
+}
+.line3{
+  margin-top: 30px;
+}
+/*Feedback*/
+.tubeslack, .redlack{
+  width: 100%;
+  height: 100%;
+  max-width: 150px;
+  max-height: 150px;
+  background: #00FFE0;
+  background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), rgba(0, 255, 224, 1);
+  border-radius: 50%;
+  opacity: 0.6;
+}
+.tubeslack{
+  margin-left: -25%;
+  margin-top: 80%;
+}
+.redlack{
+  margin-left: auto;
+}
+.tubeslack img, .redlack img{
+  width: 74%;
+  height: 74%;
+  margin: 13%;
+}
+/*Karusel*/
+.imgborder, .w-img, .d-block{
+    border-radius: 50%;
+}
+.imgborder{
+  position: relative;
+  height: 200px;
+  width: 200px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(0, 81, 155, 0.4) 100%), #00FFE0;
+  margin: 10% 3%;
+  float: left;
+}
+.w-img {
+  position: absolute;
+  width: 180px;
+  height: 180px;  
+  top: 10px;
+  left: 10px;
+}
+.carousel-inner{
+  box-shadow: 0 2px 8px rgba(255, 89, 119, 0.5);
+}
+.clientText{
+  margin-top: 15%;
+  text-align: left;
+  min-height: 200px;
+}
+.clientText span{
+  font-weight: bold;
+  text-align: center;
+}
+.carousel-inds{
+  display: -webkit-flex; 
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  height: 24px;  
+  margin-top: 1em;
+}
+.carousel-indicators{
+  position: static;
+  height: 24px;
+  margin: 1px;
+}
+.carousel-control-next, .carousel-control-prev{
+  position: static;
+  width: 24px;
+  height: 24px; 
+}
+.carousel-indicators li{
+  width: 20px;
+  height: 20px; 
+  border: solid 2px #00FFE0;
+  border-radius: 50%;  
+  margin: 1px;
+}
+.carousel-indicators .active {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(0, 81, 155, 0.4) 100%), #00FFE0; 
+}
+/*Document*/
+.doc{
+  margin-bottom: 1em;
+  text-align: right;
+}
+.docrow img{
+  max-width: 262.5px;  
+}
+.instabtn{
+  width: 100%;
+  height: 75px;
+  max-width: 200px;
+  max-height: 75px;
+  padding: 2px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(0, 81, 155, 0.4) 100%), #00FFE0;
+  border-radius: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.reference{
+  width: 100%;
+  height: 100%; 
+  background-color: #FFFFFF;
+  border-radius: 60px;
+  color: #010101;
+  padding-top:.5em;
+
+}
+/*Adress*/
+.adress{
+  position: relative;
+  height: 700px;
+  padding: 0;
+  background-image: url(../img/map.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+.hand{
+  position: absolute;
+  max-width: 570px;
+  bottom:0; 
+  opacity: 0.7; 
+}
+.portret img{
+  position: absolute;
+  max-width: 200px;
+  max-height: 200px;
+  border-radius: 50%; 
+  top: 100px; 
+  left: 15%; 
+}
+.adress-content{
+  position: absolute;
+  max-width:450px;
+  max-height: 450px;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(0, 81, 155, 0.4) 100%), #00FFE0;
+  border-radius: 50%;   
+  padding: 30px;
+  bottom: 100px;
+  right: 20%; 
+  z-index: 10;
+}
+.adress-body{
+  width:100%;
+  height: 100%;
+  background: #FFFFFF;
+  border-radius: 50%;
+  padding: 1em;
+}
+.adress-title{
+  font-weight: bold;
+  text-align: center;
+}
+.adrss p{
+  margin-right: .5em;
+}
+.adrss img, .instabtn img{
+  max-width: 18px;
+  max-height: 18px;
+  margin-right: .5em;
+}
+.adrss{
+  display: -webkit-flex; 
+  display: flex;
+  margin-left: 15%;
+}
+.adrSosial{
+  display: -webkit-flex; 
+  display: flex;
+  margin-top: 1em;
+  padding-left: 50%; 
+}
+.adrSosial img{
+  max-width: 24px;
+  margin-right: 12px;
+}
+.insta{
+  margin-left: -30px;
+}
+/*Footer*/
+.footer{
+  background-color: #FF5977;
+  height: 70px; 
+  margin-bottom: 0;
+  padding: 0;
+}
+.topbttn{
+   position: absolute;
+   text-align: center;
+   width: 100%;
+   height: 45px;
+   max-width: 45px;   
+   right: 5px;
+   bottom:-60px; 
+   background: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(0, 81, 155, 0.4) 100%), #00FFE0;
+   box-shadow: 0 4px 10px rgba(255, 124, 163, 0.5);
+   border: none;   
+   color: #FFFFFF;
+   font-size: 40px;
+   padding-bottom: 1em;   
+}
+.toTop{ 
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(0, 81, 155, 0.4) 100%), #00FFE0;
+  box-shadow: 0 4px 10px rgba(255, 124, 163, 0.5);
+  border: none;
+  height: 45px;
+  width: 45px;
+  color: #FFFFFF;
+  font-size: 40px;
+  padding-bottom: 1em;
+}
+
+/*Экстрамалые девайсы («телефоны», < 576px)*/
+@media (max-width: 575.98px) { 
+  .forma .img, .section>div, .imgborder{
+    display: none;
+  }
+  .adrSosial {
+    margin-top: .25em;
+  }
+  table{
+    font-size: 11px;
+    line-height: 1em;
+  }
+  .modal-body input, .modal-body u, .adrss, .textcard span{
+    font-size: 14px;
+  }  
+  .offer_name div, .info, .doc{
+    text-align: center;    
+  }
+  hr{
+    margin: auto;
+  }  
+  .info p{
+  margin-left: auto;
+  margin-right: auto;
+  }
+  .Doc1, .Doc2, .Doc3{
+    margin-right: 0;
+  } 
+  .clientText{
+    text-align: center;
+    margin-top: 0;
+  } 
+}
+
+/*Малые девайсы («ландшафтные», < 768px)*/
+@media (max-width: 767.98px) { 
+ .portret{
+  display: none;
+ }
+}
+
+/*Средние девайсы («таблетки», < 992px)*/ 
+@media (max-width: 991.98px) { 
+  .forma .img, .portret, .footer .container, .feedback .col-lg{
+    display: none;
+  }
+  .adress-content{
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/*Большие девайсы (большие десктопы, < 1200px)*/
+@media (max-width: 1199.98px) { 
+  .nav-link{
+    padding-right: .55em;
+    padding-left: .55em;
+  }
+  .Right, .Left, .Central{
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

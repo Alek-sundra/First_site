@@ -1,0 +1,598 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="external/css/bootstrap.min.css">
+    <!-- My style CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Miheeva nail</title>
+  </head>
+  <body>
+
+    <!-- Modal -->
+    <div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="modal-content">          
+          <div class="modal-body">
+            <div>
+              <u id="modalHead">ВАШИ ДАННЫЕ</u>          
+            </div>
+            <div>
+              <input class="mess" type="text" name="name" placeholder="Ваше имя" onclick="MessValue('mess')">
+            </div>
+            <div>
+              <input class="mess" type="text" name="number" placeholder="Ваш телефон" onclick="MessValue('mess')">
+            </div>
+            <div>
+              <button type="button" class="sendbttn" onclick="sendForm(); return false;">Отправить</button>
+            </div>
+          </div>                        
+        </div><!-- Modal content-->
+      </div>
+    </div><!-- Modal -->     
+
+    <!--Navigation and introduction-->
+    <div class="container-fluid main" id="TopMain">
+      <div class="container-fluid master">
+        
+        <div class="container">
+          <div class="row">
+
+            <!--Logotype-->
+            <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2 col-xl-2 orde-lg-1">
+              <p class="logo">Miheeva_nail</p>
+              <p class="logotxt">Сервис на дому</p>
+            </div>
+
+            <!--Phone and button-->
+            <div class="col-xs-12 col-sm-7 col-md-5 col-lg-3 col-xl-3 order-lg-3">
+              <div class="callme">
+                <p>+7 (908) <span class="number">281-91-63</span></p>
+              </div> 
+              <!-- Button trigger modal -->
+              <button type="button" class="ordercall" data-toggle="modal" data-target="#Modal" onclick="MessValue('close')">Заказать звонок</button>                   
+            </div> <!--Phone and button-->
+          
+            <!--Navpanel-->
+            <div class="col-xs-12 col-sm-1 col-md-4 col-lg-7 col-xl-7 order-lg-2">
+              <nav class="navbar navbar-expand-lg navbar-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="icon"></span>
+                  <span class="icon mid"></span>
+                  <span class="icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <a class="nav-link" href="#TopMain">Главная</a>
+                  <a class="nav-link" href="#Service">Услуги</a>
+                  <a class="nav-link" href="#MyWork">Галлерея</a>
+                  <a class="nav-link" href="#Feedback">Отзывы</a>
+                  <a class="nav-link" href="#Documents">Сертификаты</a>
+                  <a class="nav-link" href="#Adress">Контакты</a>
+                </div>
+              </nav>
+             </div> <!--Navpanel-->
+            </div><!--row-->
+          
+          <!--Offer-->             
+          <div class="row align-items-center offer_name">
+
+            <div class="col-auto">
+              <div>
+                <span class="mastername">ЕКАТЕРИНА МИХЕЕВА</span><br>
+                <span class="about">ДИПЛОМИРОВАННЫЙ</span><br><hr class="blueline">
+                <span class="about">МАСТЕР НОГТЕВОГО СЕРВИСА</span><br>
+                <span class="slogan">Позабочусь о Ваших ручках и ножках<br>как о своих собственных</span>
+              </div>
+              <br>
+              <button type="button" class="register" data-toggle="modal" data-target="#Modal" onclick="MessValue('close')">Записаться</button>
+            </div> 
+
+            <div class="col col-xl-5"></div>
+
+            <div class="col-auto">
+              <span class="sale">СКИДКА 15%</span><br>
+              <span class="about">ДЛЯ ИМЕНИННИКОВ</span><br><hr class="blueline">                  
+            </div>
+          </div>
+        </div>
+
+        
+      </div><!--master-->
+      <div class="container forma">
+        <div class="row">
+          
+          <div class="col-lg img">
+            <img class="formaimg" src="img/formafit.jpg" alt="Инструменты для маникюра">
+          </div><!--img-->
+          
+          <div class="col-lg info">
+            <div class="section">
+              <div>
+                <div>
+                  <img src="img/formpic1.png" alt="Безопасность">
+                </div>
+              </div>
+              <p>
+                <span>Безопасность</span><br>
+                Стерилизация инструментов <br>Одноразовые материалы
+              </p>
+            </div>
+
+            <div class="section">
+              <div>
+                <div>
+                  <img src="img/formpic2.png" alt="Качество и гарантии">
+                </div>
+              </div>
+              <p>
+                <span>Качество и гарантии</span><br>
+                Используются профессиональные <br>материалы, прошедшие сертификацию
+              </p>
+            </div>
+            
+            <div class="section">  
+              <div>
+                <div>
+                  <img src="img/formpic3.png" alt="Уникальный дизайн">
+                </div>
+              </div>
+              <p>
+                <span>Уникальный дизайн</span><br>
+                Создаю оригинальный дизайн <br>для Ваших ногтей
+              </p>
+            </div>
+            <button type="button" class="register" data-toggle="modal" data-target="#Modal" onclick="MessValue('close')">Записаться</button>
+          </div><!--info-->
+          
+        </div><!--row-->
+      </div><!--forma-->
+    </div><!--main part-->
+    
+    <hr class="line">
+
+    <!--Service and price-->
+    <div class="container parts" Id="Service">
+      <p class="ptitle">Услуги и цены</p>      
+      <div class="row">
+
+        <div class="col-xl Serv">
+          <div class="card Left">
+            <img src="img/manicure.jpg" alt="маникюр">
+            <span class="ServName">Маникюр</span>
+          </div>
+          <div class="textcard Left">
+            <span>Прайс</span>
+            <table>              
+              <tr>
+                <td>Маникюр</td> <td>300 руб.</td>
+              </tr>
+              <tr>
+                <td>Маникюр + гель-лак</td> <td>700 руб.</td>
+              </tr>
+              <tr>
+                <td>Укрепление акриловой пудрой</td> <td>100 руб.</td>
+              </tr>
+              <tr>
+                <td>Покрытие лаком</td> <td>100 руб.</td>
+              </tr>
+              <tr>
+                <td>Снятие покрытия другого мастера</td> <td>100 руб.</td>
+              </tr>
+              <tr>
+                <td>Полное снятие материала <br>без последующего покрытия</td> <td>200 руб.</td>
+              </tr>
+            </table>
+            <span>Дизайн</span>
+            <table>              
+              <tr>
+                <td>Френч, лунный маникюр</td> <td>100 руб.</td>
+              </tr>
+              <tr>
+                <td>Фольга, битое стекло,<br> растяжка блёстками,песок, блёстки,<br> ленты, слайдер, втирка на 2 ногтя</td> <td>50 руб.</td>
+              </tr>
+              <tr>
+                <td>Стразы</td> <td>50-150 руб.</td>
+              </tr>
+              <tr>
+                <td>Царь-ноготь</td> <td>200-300 руб.</td>
+              </tr>
+              <tr>
+                <td>Ручная роспись</td> <td>от 50 руб.</td>
+              </tr>
+              <tr>
+                <td>Выезд на дом</td> <td>Двойной тариф</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <div class="col-xl Serv">
+          <div class="card Central">
+            <img src="img/pedicure.jpg" alt="педикюр">
+            <span class="ServName">Педикюр</span>
+          </div>
+          <div class="textcard Central">
+            <span>Прайс</span>
+            <table>              
+              <tr>
+                <td>Педикюр</td> <td>600 руб.</td>
+              </tr>
+              <tr>
+                <td>Педикюр + гель-лак</td> <td>900 руб.</td>
+              </tr>
+              <tr>
+                <td>Укрепление акриловой пудрой</td> <td>100 руб.</td>
+              </tr>
+              <tr>
+                <td>Покрытие лаком</td> <td>100 руб.</td>
+              </tr>
+              <tr>
+                <td>Снятие покрытия другого мастера</td> <td>100 руб.</td>
+              </tr>
+              <tr>
+                <td>Полное снятие материала <br>без последующего покрытия</td> <td>200 руб.</td>
+              </tr>
+            </table>
+            <span>Дизайн</span>
+            <table>              
+              <tr>
+                <td>Френч, лунный маникюр</td> <td>100 руб.</td>
+              </tr>
+              <tr>
+                <td>Фольга, битое стекло,<br> растяжка блёстками,песок, блёстки,<br> ленты, слайдер, втирка на 2 ногтя</td> <td>50 руб.</td>
+              </tr>
+              <tr>
+                <td>Стразы</td> <td>50-150 руб.</td>
+              </tr>
+              <tr>
+                <td>Царь-ноготь</td> <td>200-300 руб.</td>
+              </tr>
+              <tr>
+                <td>Ручная роспись</td> <td>от 50 руб.</td>
+              </tr>
+              <tr>
+                <td>Выезд на дом</td> <td>Двойной тариф</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <div class="col-xl Serv">
+          <div class="card Right">
+            <img src="img/grownails.jpg" alt="наращивание">
+            <span class="ServName">Наращивание</span>
+          </div>
+          <div class="textcard Right">
+            <span>Прайс</span>
+            <table>              
+              <tr>
+                <td>Наращивание на файбер + маникюр <br>и покрытие гель-лак</td> <td>1200 руб.</td>
+              </tr>
+              <tr>
+                <td>Снятие покрытия другого мастера</td> <td>100 руб.</td>
+              </tr>
+              <tr>
+                <td>Полное снятие материала <br>без последующего покрытия</td> <td>200 руб.</td>
+              </tr>
+              <tr>
+                <td>Ремонт трещины, донаращивание</td> <td>50-100 руб.</td>
+              </tr>
+              <tr>
+                <td><br></td> <td></td>
+              </tr>                          
+            </table>
+            <span>Дизайн</span>
+            <table>              
+              <tr>
+                <td>Френч, лунный маникюр</td> <td>100 руб.</td>
+              </tr>
+              <tr>
+                <td>Фольга, битое стекло,<br> растяжка блёстками,песок, блёстки,<br> ленты, слайдер, втирка на 2 ногтя</td> <td>50 руб.</td>
+              </tr>
+              <tr>
+                <td>Стразы</td> <td>50-150 руб.</td>
+              </tr>
+              <tr>
+                <td>Царь-ноготь</td> <td>200-300 руб.</td>
+              </tr>
+              <tr>
+                <td>Ручная роспись</td> <td>от 50 руб.</td>
+              </tr>
+              <tr>
+                <td>Выезд на дом</td> <td>Двойной тариф</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+      </div>      
+      <button type="button" class="register Serv" data-toggle="modal" data-target="#Modal" onclick="MessValue('close')">Записаться</button>
+    </div><!--Service and price-->
+
+    <hr class="line">
+
+    <!--My Works - gallery-->
+    <div class="container parts" Id="MyWork">
+      <p class="ptitle">Мои работы</p>
+      <div class="row">
+
+        <div class="col-6 bigpick">
+          <img class="galleryBig" src="img/bigpink.jpg" alt="фото розовый маникюр">
+          <button type="button" class="register btningallery" data-toggle="modal" data-target="#Modal" onclick="MessValue('close')">Записаться</button>
+        </div>
+
+        <div class="col-3 gallery">
+          <div> 
+            <img class="gallery11" src="img/ped1.jpg" alt="фото розовый педикюр">    
+          </div>
+          <div>
+            <img class="gallery21" src="img/man2.jpg" alt="фото маникюр со стразами"> 
+          </div>         
+        </div><!--end of second column-->
+
+        <div class="col-3 gallery">
+          <div> 
+            <img class="gallery12" src="img/man1.jpg" alt="фото черно-белый маникюр">
+          </div>
+          <div> 
+            <img class="gallery22" src="img/ped2.jpg" alt="фото педикюр с росписью">
+          </div>  
+        </div>
+
+      </div> 
+      <div class="row gallery line3">
+
+        <div class="col-3">
+          <img class="gallery31" src="img/man31.jpg" alt="фото красный маникюр">
+        </div>
+        <div class="col-3">
+          <img class="gallery32" src="img/man32.jpg" alt="фото черно маникюр">
+        </div>
+        <div class="col-3">
+          <img class="gallery33" src="img/man33.jpg" alt="фото желто-белый маникюр">
+        </div>
+        <div class="col-3">
+          <img class="gallery34" src="img/man34.jpg" alt="фото маникюр с рисунком">
+        </div>
+
+      </div>    
+    </div><!--My Works - gallery-->
+
+    <hr class="line">
+
+    <!--Feedback-->
+    <div class="container parts feedback" id="Feedback">
+      <p class="ptitle">Отзывы моих Клиентов</p>
+      <div class="row">
+
+        <div class="col-lg">
+          <div class="tubeslack">
+            <img src="img/tubeslack.png" alt="Пузырьки с лаком">
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+            
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="imgborder">
+                    <div class="w-img">
+                      <img src="img/otziv1.jpg" class="d-block w-100" alt="Портретное фото">
+                    </div>
+                </div>
+                <div class="clientText"><span>Екатерина Демидова</span><br>  
+                   Мне очень понравилась работа<br>
+                   Екатерины. Покрытие насыщенное,<br>
+                   держится отлично! Проверено уборкой ))
+                </div>                                    
+              </div>
+              <div class="carousel-item">
+                <div class="imgborder">
+                  <div class="w-img">
+                    <img src="img/otziv2.jpg" class="d-block w-100" alt="Портрет девушки">
+                  </div>
+                </div>
+                <div class="clientText"><span>Мария Еронова</span><br>
+                   Приветливый мастер, отличная<br>
+                   работа! Огромное спасибо за красоту<br>
+                   моих ноготков! Рекомендую!
+                </div>   
+              </div>
+              <div class="carousel-item">
+                <div class="imgborder">
+                  <div class="w-img">
+                    <img src="img/otziv3.jpg" class="d-block w-100" alt="Фотография девушки">
+                  </div>
+                </div>
+                 <div class="clientText"><span>Марина Исаченко</span><br>
+                   Екатерина сделала свою работу<br>
+                   качественно и профессиональнно!<br>
+                   Очень рада, что нашла своего мастера!<br>
+                   Любуюсь своими ручками каждый день!
+                </div>   
+              </div>
+              <div class="carousel-item">
+                <div class="imgborder">
+                  <div class="w-img">
+                    <img src="img/otziv4.jpg" class="d-block w-100" alt="Женщина портрет">
+                  </div>
+                </div>
+                 <div class="clientText"><span>Елена Шпиллер</span><br>
+                   Хочу поблагодарить Екатерину<br>
+                   за отличную работу! Обязательно<br>
+                   приду к ней снова! Мои ручки<br>
+                   ухоженные и привлекают внимание<br>
+                   яркими акцентами!
+                </div>                     
+              </div>
+              <div class="carousel-item">
+                <div class="imgborder">
+                  <div class="w-img">
+                    <img src="img/otziv5.jpg" class="d-block w-100" alt="Блондинка">
+                  </div>
+                </div>
+                <div class="clientText"><span>Татьяна Голубева-Синенкова</span><br>
+                   У меня самый лучший мастер!<br>
+                   И самые красивые ноготочки!<br>
+                   Цвета играют в зависимости от<br>
+                   времени суток. Огромное спасибо!
+                </div>                  
+              </div>              
+            </div>  
+            <div class="carousel-inds">
+              <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
+                <img src="img/Prev.png" alt="Предыдущий">
+              </a>
+              <ol class="carousel-indicators">
+                <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselIndicators" data-slide-to="4"></li>
+              </ol>
+              <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
+                <img src="img/Next.png" alt="Следующий">
+              </a>
+            </div>
+          </div>
+          
+          <!---->
+        </div>
+
+        <div class="col-lg">
+          <div class="redlack">
+            <img src="img/redlack.png" alt="Красный лак">
+          </div>
+        </div>
+
+      </div>      
+    </div><!---->
+
+    <hr class="line">
+
+    <!--Documents-->
+    <div class="container parts" id="Documents">
+      <p class="ptitle">Мои дипломы и сертификаты</p>
+      <div class="row docrow">
+
+        <div class="col-sm doc">
+           <img class="Doc1" src="img/sertificate1.jpg" alt="фото сертификат">
+        </div>
+        <div class="col-sm doc">
+          <img class="Doc2" src="img/sertificate2.jpg" alt="фото документ">
+        </div>
+        <div class="col-sm doc">
+          <img class="Doc3" src="img/sertificate3.jpg" alt="фото диплом">
+        </div>
+        <div class="col-sm doc">
+          <img class="Doc4" src="img/sertificate4.jpg" alt="фото свидетельство">
+        </div>
+
+      </div>
+      <div class="instabtn">
+        <a href="#">
+          <div class="reference">
+            Смотреть все
+            <img src="img/instagram1.png" alt="Instagram">
+          </div>
+        </a>
+      </div>
+    </div><!----><!---->
+
+    <!--Adress-->
+    <div class="container-fluid parts adress" id="Adress">
+      <p class="ptitle">Жду Вас к себе в гости</p>
+      <div class="portret">
+        <img  src="img/mastermini.jpg" alt="Портретное фото мастера">
+      </div>
+        
+      <div class="adress-content">          
+        <div class="adress-body">
+          <p class="adress-title">Miheeva_nail<br>Сервис на дому</p>                                                
+          <div class="adrss">
+            <img src="img/address.png" alt="Адрес">
+            <p>г. Сафоново, ул. Строителей, д.14</p>        
+          </div>        
+          <div class="adrss">
+            <img src="img/phone-call.png" alt="Телефон">
+            <p>+7 (908) <span>281-91-63</span></p>  
+            <img src="img/whatsapp.png" alt="Вотсап">
+            <img src="img/viber.png" alt="Вайбер">      
+          </div>
+          <div class="adrss">
+            <img src="img/clock.png" alt="Часы работы">
+            <p>Ежедневно: с 11-00 до 15-00</p>        
+          </div>  
+         
+          <div>
+            <button type="button" class="register" data-toggle="modal" data-target="#Modal" onclick="MessValue('close')">Записаться</button>
+          </div>
+          <div class="adrSosial">
+            <a href="#" class="insta"><img src="img/instagram2.png" alt="Инстаграм"></a>
+            <a href="#"><img src="img/vk.png" alt="Контакт"></a>            
+          </div>
+        <div>
+                
+        </div>
+        </div>                        
+      </div><!--adress-content-->          
+      
+      <div class="hand">
+        <img src="img/hand.png" alt="фото руки">        
+      </div>
+      <a href="#TopMain">
+        <div class="topbttn">^</div>
+      </a>   
+    </div><!---->
+
+    <!--Footer-->
+    <div class="container-fluid footer">
+        <div class="container">
+          <div class="row">
+            <!--Logotype-->
+            <div class="col-2 orde-lg-1">
+              <p class="logo">Miheeva_nail</p>
+              <p class="logotxt">Сервис на дому</p>
+            </div>
+
+            <!--Phone and button-->
+            <div class="col-3 order-lg-3">
+              <div class="callme">
+                <p>+7 (908) <span class="number">281-91-63</span></p>
+              </div> 
+              <!-- Button trigger modal -->
+              <button type="button" class="ordercall" data-toggle="modal" data-target="#Modal" onclick="MessValue('close')">Заказать звонок</button>                   
+            </div> <!--Phone and button-->
+          
+            <!--Navpanel-->
+            <div class="col-7 order-lg-2">
+              <nav class="navbar navbar-expand-lg navbar-light">               
+                <div class="collapse navbar-collapse">
+                  <a class="nav-link" href="#TopMain">Главная</a>
+                  <a class="nav-link" href="#Service">Услуги</a>
+                  <a class="nav-link" href="#MyWork">Галлерея</a>
+                  <a class="nav-link" href="#Feedback">Отзывы</a>
+                  <a class="nav-link" href="#Documents">Сертификаты</a>
+                  <a class="nav-link" href="#Adress">Контакты</a>
+                </div>
+              </nav>
+             </div> <!--Navpanel-->             
+          </div><!--row-->            
+        </div>
+    </div><!--Footer-->     
+    <script src="js/forma.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="external/js/bootstrap.min.js"></script>
+  </body>
+</html>
