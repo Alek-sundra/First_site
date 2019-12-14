@@ -73,7 +73,7 @@ img{
 .navbar-collapse{
     text-align: center;
 }
-.nav-link{  
+.nav-link{ 
   margin-top: .5em;
   color: #FFFFFF;
 }
@@ -97,6 +97,7 @@ img{
   width: 50%;
   margin-left: 25%;
 }
+
 /*Call me*/
 .callme p{
   margin-top: 1em; 
@@ -181,12 +182,11 @@ img{
   margin-top: 15%;
 }
 .blueline{
-  width: 45%;
+  width: 46%;
   max-width: 150px;
   height: 3px;
   border: none;
-  margin: 0;
-  margin-left: 1.5em;
+  margin: 0 0 0 1.5em;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(0, 81, 155, 0.4) 100%), #00FFE0;
 }
 .mastername{
@@ -546,20 +546,10 @@ td:last-child{
    font-size: 40px;
    padding-bottom: 1em;   
 }
-.toTop{ 
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(0, 81, 155, 0.4) 100%), #00FFE0;
-  box-shadow: 0 4px 10px rgba(255, 124, 163, 0.5);
-  border: none;
-  height: 45px;
-  width: 45px;
-  color: #FFFFFF;
-  font-size: 40px;
-  padding-bottom: 1em;
-}
 
 /*Экстрамалые девайсы («телефоны», < 576px)*/
 @media (max-width: 575.98px) { 
-  .forma .img, .section>div, .imgborder{
+  .section>div, .imgborder{
     display: none;
   }
   .adrSosial {
@@ -593,14 +583,14 @@ td:last-child{
 
 /*Малые девайсы («ландшафтные», < 768px)*/
 @media (max-width: 767.98px) { 
- .portret{
+ .portret, .emtycol, .footer .container{
   display: none;
  }
 }
 
 /*Средние девайсы («таблетки», < 992px)*/ 
 @media (max-width: 991.98px) { 
-  .forma .img, .portret, .footer .container, .feedback .col-lg{
+  .forma .img, .portret, .feedback .col-lg{
     display: none;
   }
   .adress-content{
@@ -609,18 +599,23 @@ td:last-child{
     margin-left: auto;
     margin-right: auto;
   }
+  .blueline{
+    margin:0 auto;
+  }
+  .forma{
+  margin-top: -70px;
+ }
 }
 
 /*Большие девайсы (большие десктопы, < 1200px)*/
 @media (max-width: 1199.98px) { 
-  .nav-link{
-    padding-right: .55em;
-    padding-left: .55em;
-  }
   .Right, .Left, .Central{
     left: 0;
     right: 0;
     margin-left: auto;
     margin-right: auto;
+  }
+  .navFooter{
+    display: none;
   }
 }

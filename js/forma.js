@@ -28,7 +28,7 @@ function getXmlHttp()//Функция тупо перебирает возмож
 
 function MessValue(className)
 {
-  if(className == 'close' || document.getElementById('modalHead').innerHTML != 'ВАШИ ДАННЫЕ')
+  if(className == 'close' || document.getElementById('modalHead').innerHTML == 'Отправлено!')
   {
     var elems = document.getElementsByClassName('mess');
     for(var i=0; i<elems.length; i++)
