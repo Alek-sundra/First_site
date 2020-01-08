@@ -1,70 +1,68 @@
-/*
-  border:solid 1px red;
-*/
 body{
+  width: 100%;
+  max-width: 1920px;
   padding: 0;
-  font-family: Ubuntu;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 18px;
   font-style: normal;
   font-weight: 500;
+  line-height: 21px;
 }
 a:hover{
   color: #00FFE0;
   text-decoration: none;
 }
-.row div{
+.container{
+  max-width: 1300px;
+  padding: 30px 10px 60px 10px;
+}
+.forma div, .Serv, .main, .galleryWork div, .line3 div, .docrow div, .feedback div, .rowNav div{
   padding: 0;
+}
+.row{
+  margin: 0;
 }
 img{
   width:100%;
   height: 100%;
 }
 .parts{
-  margin-top: 1em;
   text-align: center;
 }
 .line{
   height: 3px;
   border: none;
   width: 50px;
-  background-color: #FF5977; 
-  margin-top: 2em; 
+  background-color: #FF5977;  
+  margin: 0 auto; 
 }
-.ptitle, .sale, .ServName{
+.ptitle{
+  font-size: 30px;
+  line-height: 34px;
+  margin-bottom: 40px;
+}
+.sale, .ServName{
   font-size: 28px;
 }
-.logo, .modal-body u, .register, .mastername, .info span, .clientText span, .reference, .adress-title{
+.modal-body input, .sendbttn, .register, .mastername, .info span, .clientText span, .reference, .adress-title{
   font-size: 24px;
-}
-.nav-link, .callme p, .modal-body input, .sendbttn, .about, .textcard span, .clientText, .adrss{
-  font-size: 18px;
 }
 .ordercall, .slogan, .info p, table{
   font-size: 14px; 
 }
 /*Navigation and introduction*/
-.main{
-  padding: 0;
-}
 .master{
   height: 900px;
   padding: 0;
   background-image: url(../img/masterfix.jpg);
   background-size: cover;
   background-position: center center;
-  background-color: #FF5977;
+  background-blend-mode: darken, overlay;
 }
 /*Logotype*/
 .logo{
-  margin-top: .5em;
-  margin-bottom: 0;  
-  color: #00FFE0;
-}
-.logotxt{   
-  font-size: 12px;
-  color: #FFFFFF;
-  line-height: 0;
-  margin: 0;
-  min-width: 82px;
+  max-height: 42px;
+  max-width: 148px;
 }
 /*Nav panel*/
 .navbar{
@@ -74,7 +72,6 @@ img{
     text-align: center;
 }
 .nav-link{ 
-  margin-top: .5em;
   color: #FFFFFF;
 }
 .navbar-toggler{
@@ -99,37 +96,32 @@ img{
 }
 
 /*Call me*/
-.callme p{
-  margin-top: 1em; 
-  color: #FFFFFF;
-  width: 50%;
-  max-width: 143px;
-  float: left;
+.call{
+  max-height: 45px;
 }
-.callme .number, .adrss span{
-  color: #00FFE0;
+.callme{
+  max-height: 21px;
+  max-width: 155px;
 }
 .ordercall{
-  width: 45%;
-  max-width: 120px;
+  width: 100%;
   height: 45px;
-  margin-left: 4%;
-  margin-top: .5em;
+  max-width: 150px;
   border: 2px solid #00FFE0;
   border-radius: 60px;
   color: #FFFFFF; 
+  margin-left: 10px;
   background-color: #00FFE0;
-  background-color: rgba(255,255,255,0); 
+  background-color: rgba(255,255,255,0);
 }
-.ordercall:hover{
-  color: #00FFE0;
+.ordercall:hover{  
+  background: linear-gradient(rgba(255, 255, 255, 0.4) 0%, rgba(0, 81, 155, 0.4) 100%), #00FFE0;
+  border: none;
 }
 /*Modal*/
-
-.modal-dialog div{
-  margin-top: 4px;
-  margin-bottom: 4px;
-  margin-left: auto;
+.modal-dialog{
+  max-width: 826px;
+  height: 826px;
   text-align: center;
 }
 .modal-dialog .close{
@@ -139,7 +131,8 @@ img{
 }
 .modal-content{
   width:100%;
-  padding: 5%;
+  height: 100%;
+  padding: 10%;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(0, 81, 155, 0.4) 100%), #00FFE0;
   border-radius: 50%;  
 }
@@ -147,19 +140,29 @@ img{
   width:100%;
   background: #FFFFFF;
   border-radius: 50%; 
+  padding-top: 125px;
 }
 .modal-body u{
   width: 100%;
   font-weight: bold;
+  font-size: 36px;
+  line-height: 41px;
   text-align: center;
 }
+.modalH{
+  margin-bottom: 60px;
+}
 .modal-body input, .sendbttn{
-  width: 50%;
-  height: 75px;
+  width: 100%;
+  max-width: 420px;
+  height: 90px;
   border: 2px solid #00FFE0;
   border-radius: 60px;
   color: black;
   text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 28px;
 }
 .modal-body .sendbttn{
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(0, 81, 155, 0.4) 100%), #00FFE0;
@@ -168,7 +171,7 @@ img{
 /*Button*/
 .register{
   width: 100%;
-  max-width: 200px;
+  max-width: 244px;
   height: 75px;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(0, 81, 155, 0.4) 100%), #00FFE0;
   box-shadow: 0 2px 4px #003844;
@@ -176,6 +179,11 @@ img{
   color: #FFFFFF;
   text-align: center;
   border: none;
+  margin-top: 40px;
+}
+.register:hover{
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(0, 81, 155, 0.4) 100%), #77FFFF;
+  background-blend-mode: darken, normal;
 }
 /*Offer*/
 .offer_name{
@@ -211,12 +219,13 @@ img{
   margin-top: -200px;
   color: #FFFFFF;
 }
+
 .forma .row{
    background-color: #FF5977;
 }
 .formaimg{
-  max-width: 570px;
-  max-height: 500px;
+  max-width: 650px;
+  max-height: 610px;
 }
 .section div{
   padding: 10px;
@@ -244,24 +253,22 @@ img{
   margin-bottom: 3px;
 }
 /*Service and price*/
-.Serv{
-  margin-top: 1em;
-}
 .card{
-  max-width: 360px;
+  max-width: 420px;
+  max-height: 429px;
   box-shadow: 0 4px 8px rgba(255, 89, 119, 0.5); 
   z-index: 10;
   transition: 2s;
 }
 .card img{
-  max-width: 360px;
-  max-height: 360px;
+  max-width: 420px;
+  max-height: 429px;
 }
 .textcard{
   position: absolute;
   height: 100%;
   width: 100%;
-  max-width: 360px;
+  max-width: 420px;
   top: 0;
   background-color: #FF5977; 
   border-radius: 1%;
@@ -273,11 +280,11 @@ img{
   transform: rotateY(180deg);
 }
 .Right{
-  left: 5.26%;
+  left: 13.3px;
 }
 .Central{
-  left: 2.63%;
-  right: 2.63%;
+  left: 6.7px;
+  right: 6.7px;
 }
 .ServName{
   position: absolute;
@@ -291,10 +298,9 @@ img{
 }
 table{
   width: 100%;
-  max-width: 340px;
+  max-width: 400px;
   text-align: left;  
   margin: 10px;
-  line-height: 1.1em;
 }
 td:last-child{
   color: #00FFE0;
@@ -313,56 +319,46 @@ td:last-child{
   margin: -37.5px auto auto auto;
 }
 .galleryBig{
-  max-width: 555px;
-  max-height: 570px;
+  max-width: 640px;
+  max-height: 614px;
 }
 .bigpick{
     text-align: left;
 }
 .gallery img{
-  max-width: 262.5px;
-  max-height: 270px;
+  max-width: 310px;
+  max-height: 297px;
 }
 .gallery{
   text-align: right;
 }
-.gallery11, .gallery21, .gallery33, .Doc3{
-  margin-right: 2.63%;
+.gallery11, .gallery21, .gallery33{
+  margin-right: 5px;
 }
-.gallery31, .Doc1{
-  margin-right: 7.89%
+.gallery31{
+  margin-right: 15px;
 }
-.gallery32, .Doc2{
-  margin-right: 5.26%
+.gallery32{
+  margin-right: 10px;
 }
-.gallery21, .gallery22{
-  margin-top: 10.5%;
-}
-.line3{
-  margin-top: 30px;
+.gallery21, .gallery22, .line3{
+  margin-top: 20px;
 }
 /*Feedback*/
-.tubeslack, .redlack{
-  width: 100%;
-  height: 100%;
-  max-width: 150px;
-  max-height: 150px;
-  background: #00FFE0;
-  background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), rgba(0, 255, 224, 1);
-  border-radius: 50%;
-  opacity: 0.6;
+.tubeslack{
+  max-width: 260px;
+  max-height: 260px;
+}
+.redlack{
+  max-width: 200px;
+  max-height: 200px;
 }
 .tubeslack{
-  margin-left: -25%;
-  margin-top: 80%;
+  margin-left: -80%;
+  margin-top: 50%;
 }
 .redlack{
   margin-left: auto;
-}
-.tubeslack img, .redlack img{
-  width: 74%;
-  height: 74%;
-  margin: 13%;
 }
 /*Karusel*/
 .imgborder, .w-img, .d-block{
@@ -370,26 +366,31 @@ td:last-child{
 }
 .imgborder{
   position: relative;
-  height: 200px;
-  width: 200px;
+  height: 201px;
+  width: 201px;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(0, 81, 155, 0.4) 100%), #00FFE0;
-  margin: 10% 3%;
+  margin: 64px 16px 64px 34px;
   float: left;
 }
 .w-img {
   position: absolute;
-  width: 180px;
-  height: 180px;  
+  width: 181px;
+  height: 181px;  
   top: 10px;
   left: 10px;
 }
 .carousel-inner{
+  width: 100%
+  height: 100%;
+  max-width: 640px;
+  max-height: 329px;
   box-shadow: 0 2px 8px rgba(255, 89, 119, 0.5);
 }
 .clientText{
-  margin-top: 15%;
+  margin-top: 92px;
   text-align: left;
-  min-height: 200px;
+  min-height: 201px;
+  line-height: 27px;
 }
 .clientText span{
   font-weight: bold;
@@ -401,46 +402,56 @@ td:last-child{
   -webkit-justify-content: center;
   justify-content: center;
   height: 24px;  
-  margin-top: 1em;
+  margin-top: 40px;
 }
 .carousel-indicators{
   position: static;
   height: 24px;
-  margin: 1px;
+  margin: 0;
 }
 .carousel-control-next, .carousel-control-prev{
   position: static;
   width: 24px;
   height: 24px; 
+  margin: 0 10px;
 }
 .carousel-indicators li{
   width: 20px;
   height: 20px; 
   border: solid 2px #00FFE0;
   border-radius: 50%;  
-  margin: 1px;
+  margin: 0 10px;
 }
 .carousel-indicators .active {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(0, 81, 155, 0.4) 100%), #00FFE0; 
 }
 /*Document*/
 .doc{
-  margin-bottom: 1em;
+  margin-bottom: 10px;
   text-align: right;
 }
+.docrow{
+  padding-bottom: 30px; 
+}
 .docrow img{
-  max-width: 262.5px;  
+  max-width: 268px;
+  max-height: 370px;  
+}
+.Doc1{
+  margin-right: 57px;
+}
+.Doc2, .Doc3{
+    margin-right: 28.5px;
 }
 .instabtn{
   width: 100%;
   height: 75px;
-  max-width: 200px;
-  max-height: 75px;
-  padding: 2px;
+  max-width: 244px;  
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(0, 81, 155, 0.4) 100%), #00FFE0;
   border-radius: 60px;
   margin-left: auto;
   margin-right: auto;
+  padding: 2px;
 }
 .reference{
   width: 100%;
@@ -448,44 +459,43 @@ td:last-child{
   background-color: #FFFFFF;
   border-radius: 60px;
   color: #010101;
-  padding-top:.5em;
-
+  padding-top: 23.5px;
+}
+.reference:hover{
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(0, 81, 155, 0.4) 100%), #00FFE0;
 }
 /*Adress*/
 .adress{
   position: relative;
-  height: 700px;
-  padding: 0;
-  background-image: url(../img/map.jpg);
+  height: 882px;
+  padding: 30px 0 0 0;
+  background-image: url(../img/map.png);
   background-size: cover;
   background-position: center center;
 }
-.hand{
-  position: absolute;
-  max-width: 570px;
-  bottom:0; 
-  opacity: 0.7; 
-}
 .portret img{
   position: absolute;
-  max-width: 200px;
-  max-height: 200px;
+  max-width: 224px;
+  max-height: 224px;
   border-radius: 50%; 
-  top: 100px; 
-  left: 15%; 
+  top: 170px; 
+  left: 16%; 
 }
 .adress-content{
   position: absolute;
-  max-width:450px;
-  max-height: 450px;
+  max-width:500px;
+  max-height: 500px;
   height: 100%;
   width: 100%;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(0, 81, 155, 0.4) 100%), #00FFE0;
   border-radius: 50%;   
-  padding: 30px;
-  bottom: 100px;
-  right: 20%; 
+  padding: 40px;
+  bottom: 152px;
+  right: 22%; 
   z-index: 10;
+}
+.adress-content:hover{
+   box-shadow: 0 0 0 48px rgba(0, 255, 224, 0.15);
 }
 .adress-body{
   width:100%;
@@ -497,24 +507,26 @@ td:last-child{
 .adress-title{
   font-weight: bold;
   text-align: center;
+  line-height: 28px;
+  margin: 34px 0 14px 0;
 }
 .adrss p{
   margin-right: .5em;
 }
 .adrss img, .instabtn img{
-  max-width: 18px;
-  max-height: 18px;
-  margin-right: .5em;
+  max-width: 22px;
+  max-height: 22px;
+  margin-right: 11px;
 }
 .adrss{
   display: -webkit-flex; 
   display: flex;
-  margin-left: 15%;
+  margin-left: 11.7%;
 }
 .adrSosial{
   display: -webkit-flex; 
   display: flex;
-  margin-top: 1em;
+  margin-top: 20px;
   padding-left: 50%; 
 }
 .adrSosial img{
@@ -527,26 +539,30 @@ td:last-child{
 /*Footer*/
 .footer{
   background-color: #FF5977;
-  height: 70px; 
+  height: 80px; 
   margin-bottom: 0;
   padding: 0;
+}
+.footer .container{
+  padding: 20px 0 0 0;
 }
 .topbttn{
    position: absolute;
    text-align: center;
-   width: 100%;
-   height: 45px;
-   max-width: 45px;   
-   right: 5px;
-   bottom:-55px; 
+   height: 50px;
+   width: 50px;   
+   right: 52px;
+   bottom:-60px; 
    background: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(0, 81, 155, 0.4) 100%), #00FFE0;
    box-shadow: 0 4px 10px rgba(255, 124, 163, 0.5);
    border: none;   
-   color: #FFFFFF;
-   font-size: 40px;
-   padding-bottom: 1em;   
+   color: #FFFFFF;    
+   font-size: 66px; 
+   line-height: 66px; 
 }
-
+.topbttn:hover{
+  background: #FFFFFF;
+}
 /*Экстрамалые девайсы («телефоны», < 576px)*/
 @media (max-width: 575.98px) { 
   .section>div, .imgborder{
@@ -593,7 +609,7 @@ td:last-child{
   .forma .img, .portret, .feedback .col-lg{
     display: none;
   }
-  .adress-content{
+  .adress-content, .adress-border{
     left: 0;
     right: 0;
     margin-left: auto;

@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="external/css/bootstrap.min.css">
     <!-- My style CSS-->
     <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet"> 
     
     <title>Miheeva nail</title>
   </head>
@@ -22,8 +24,8 @@
         </button>
         <div class="modal-content">          
           <div class="modal-body">
-            <div>
-              <u id="modalHead">ВАШИ ДАННЫЕ</u>          
+            <div class="modalH">
+              <u id="modalHead">ДЛЯ ЗАПИСИ</u>          
             </div>
             <div>
               <input class="mess" type="text" name="name" placeholder="Ваше имя" onclick="MessValue('mess')">
@@ -44,21 +46,18 @@
       <div class="container-fluid master">
         
         <div class="container">
-          <div class="row">
+          <div class="row rowNav">
 
             <!--Logotype-->
-            <div class="col-xs-12 col-sm-5 col-md-3 col-lg-2 col-xl-2 orde-lg-1">
-              <p class="logo">Miheeva_nail</p>
-              <p class="logotxt">Сервис на дому</p>
+            <div class="col-xs-12 col-sm-5 col-md-3 col-lg-2 col-xl-2 order-lg-1">
+              <img src="img/logo.png" alt="Логотип" class="logo">
             </div>
 
             <!--Phone and button-->
-            <div class="col-xs-12 col-sm-7 col-md-5 col-lg-2 col-xl-3 order-lg-3">
-              <div class="callme">
-                <p>+7 (908) <span class="number">281-91-63</span></p>
-              </div> 
-              <!-- Button trigger modal -->
-              <button type="button" class="ordercall" data-toggle="modal" data-target="#Modal" onclick="MessValue('close')">Заказать звонок</button>                   
+            <div class="col-xs-12 col-sm-7 col-md-5 col-lg-2 col-xl-3 order-lg-3 call">
+              <img src="img/number.png" alt="Номер телефона" class="callme">           
+              <!-- Button trigger modal -->              
+              <button type="button" class="ordercall" data-toggle="modal" data-target="#Modal" onclick="MessValue('close')">Заказать звонок</button> 
             </div> <!--Phone and button-->
           
             <!--Navpanel-->
@@ -312,7 +311,7 @@
         </div>
 
       </div>      
-      <button type="button" class="register Serv" data-toggle="modal" data-target="#Modal" onclick="MessValue('close')">Записаться</button>
+      <button type="button" class="register" data-toggle="modal" data-target="#Modal" onclick="MessValue('close')">Записаться</button>
     </div><!--Service and price-->
 
     <hr class="line">
@@ -320,7 +319,7 @@
     <!--My Works - gallery-->
     <div class="container parts" Id="MyWork">
       <p class="ptitle">Мои работы</p>
-      <div class="row">
+      <div class="row galleryWork">
 
         <div class="col-6 bigpick">
           <img class="galleryBig" src="img/bigpink.jpg" alt="фото розовый маникюр">
@@ -371,10 +370,8 @@
       <p class="ptitle">Отзывы моих Клиентов</p>
       <div class="row">
 
-        <div class="col-lg">
-          <div class="tubeslack">
-            <img src="img/tubeslack.png" alt="Пузырьки с лаком">
-          </div>
+        <div class="col-lg">          
+          <img src="img/tubeslack.png" alt="Пузырьки с лаком" class="tubeslack">
         </div>
 
         <div class="col-lg-6">
@@ -387,11 +384,11 @@
                       <img src="img/otziv1.jpg" class="d-block w-100" alt="Портретное фото">
                     </div>
                 </div>
-                <div class="clientText"><span>Екатерина Демидова</span><br>  
+                <p class="clientText"><span>Екатерина Демидова</span><br>  
                    Мне очень понравилась работа<br>
                    Екатерины. Покрытие насыщенное,<br>
                    держится отлично! Проверено уборкой ))
-                </div>                                    
+                </p>                                    
               </div>
               <div class="carousel-item">
                 <div class="imgborder">
@@ -399,11 +396,11 @@
                     <img src="img/otziv2.jpg" class="d-block w-100" alt="Портрет девушки">
                   </div>
                 </div>
-                <div class="clientText"><span>Мария Еронова</span><br>
+                <p class="clientText"><span>Мария Еронова</span><br>
                    Приветливый мастер, отличная<br>
                    работа! Огромное спасибо за красоту<br>
                    моих ноготков! Рекомендую!
-                </div>   
+                </p>   
               </div>
               <div class="carousel-item">
                 <div class="imgborder">
@@ -411,12 +408,12 @@
                     <img src="img/otziv3.jpg" class="d-block w-100" alt="Фотография девушки">
                   </div>
                 </div>
-                 <div class="clientText"><span>Марина Исаченко</span><br>
+                 <p class="clientText"><span>Марина Исаченко</span><br>
                    Екатерина сделала свою работу<br>
                    качественно и профессиональнно!<br>
                    Очень рада, что нашла своего мастера!<br>
                    Любуюсь своими ручками каждый день!
-                </div>   
+                </p>   
               </div>
               <div class="carousel-item">
                 <div class="imgborder">
@@ -424,13 +421,13 @@
                     <img src="img/otziv4.jpg" class="d-block w-100" alt="Женщина портрет">
                   </div>
                 </div>
-                 <div class="clientText"><span>Елена Шпиллер</span><br>
+                 <p class="clientText"><span>Елена Шпиллер</span><br>
                    Хочу поблагодарить Екатерину<br>
                    за отличную работу! Обязательно<br>
                    приду к ней снова! Мои ручки<br>
                    ухоженные и привлекают внимание<br>
                    яркими акцентами!
-                </div>                     
+                </p>                     
               </div>
               <div class="carousel-item">
                 <div class="imgborder">
@@ -438,12 +435,12 @@
                     <img src="img/otziv5.jpg" class="d-block w-100" alt="Блондинка">
                   </div>
                 </div>
-                <div class="clientText"><span>Татьяна Голубева-Синенкова</span><br>
+                <p class="clientText"><span>Татьяна Голубева-Синенкова</span><br>
                    У меня самый лучший мастер!<br>
                    И самые красивые ноготочки!<br>
                    Цвета играют в зависимости от<br>
                    времени суток. Огромное спасибо!
-                </div>                  
+                </p>                  
               </div>              
             </div>  
             <div class="carousel-inds">
@@ -467,9 +464,7 @@
         </div>
 
         <div class="col-lg">
-          <div class="redlack">
-            <img src="img/redlack.png" alt="Красный лак">
-          </div>
+          <img src="img/redlack.png" alt="Красный лак" class="redlack">
         </div>
 
       </div>      
@@ -512,61 +507,50 @@
       <div class="portret">
         <img  src="img/mastermini.jpg" alt="Портретное фото мастера">
       </div>
-        
-      <div class="adress-content">          
-        <div class="adress-body">
-          <p class="adress-title">Miheeva_nail<br>Сервис на дому</p>                                                
-          <div class="adrss">
-            <img src="img/address.png" alt="Адрес">
-            <p>г. Сафоново, ул. Строителей, д.14</p>        
-          </div>        
-          <div class="adrss">
-            <img src="img/phone-call.png" alt="Телефон">
-            <p>+7 (908) <span>281-91-63</span></p>  
-            <img src="img/whatsapp.png" alt="Вотсап">
-            <img src="img/viber.png" alt="Вайбер">      
-          </div>
-          <div class="adrss">
-            <img src="img/clock.png" alt="Часы работы">
-            <p>Ежедневно: с 11-00 до 15-00</p>        
-          </div>  
-         
-          <div>
-            <button type="button" class="register" data-toggle="modal" data-target="#Modal" onclick="MessValue('close')">Записаться</button>
-          </div>
-          <div class="adrSosial">
-            <a href="#" class="insta"><img src="img/instagram2.png" alt="Инстаграм"></a>
-            <a href="#"><img src="img/vk.png" alt="Контакт"></a>            
-          </div>
-        <div>
-                
-        </div>
-        </div>                        
-      </div><!--adress-content-->          
-      
-      <div class="hand">
-        <img src="img/hand.png" alt="фото руки">        
-      </div>
-      <a href="#TopMain">
-        <div class="topbttn">^</div>
-      </a>   
+            
+        <div class="adress-content">          
+          <div class="adress-body">
+            <p class="adress-title">Miheeva_nail<br>Сервис на дому</p>                                                
+            <div class="adrss">
+              <img src="img/address.png" alt="Адрес">
+              <p>г. Сафоново, ул. Строителей, д.14</p>        
+            </div>        
+            <div class="adrss">
+              <img src="img/phone-call.png" alt="Телефон">
+              <p>+7 (908) <span>281-91-63</span></p>  
+              <img src="img/whatsapp.png" alt="Вотсап">
+              <img src="img/viber.png" alt="Вайбер">      
+            </div>
+            <div class="adrss">
+              <img src="img/clock.png" alt="Часы работы">
+              <p>Ежедневно: с 11-00 до 15-00</p>        
+            </div>  
+           
+            <div>
+              <button type="button" class="register" data-toggle="modal" data-target="#Modal" onclick="MessValue('close')">Записаться</button>
+            </div>
+            <div class="adrSosial">
+              <a href="#" class="insta"><img src="img/instagram2.png" alt="Инстаграм"></a>
+              <a href="#"><img src="img/vk.png" alt="Контакт"></a>            
+            </div>          
+          </div>                     
+        </div><!--adress-content-->
+          
+      <a href="#TopMain" class="topbttn">^</a>   
     </div><!---->
 
     <!--Footer-->
     <div class="container-fluid footer">
         <div class="container">
-          <div class="row">
+          <div class="row rowNav">
             <!--Logotype-->
             <div class="col-xl-2 col-lg-2 col-md-3 order-xl-1">
-              <p class="logo">Miheeva_nail</p>
-              <p class="logotxt">Сервис на дому</p>
+              <img src="img/logo.png" alt="Логотип" class="logo">
             </div>
 
             <!--Phone and button-->
             <div class="col-xl-3 col-lg-6 col-md-7 order-xl-3">
-              <div class="callme">
-                <p>+7 (908) <span class="number">281-91-63</span></p>
-              </div> 
+              <img src="img/number.png" alt="Номер телефона" class="callme"> 
               <!-- Button trigger modal -->
               <button type="button" class="ordercall" data-toggle="modal" data-target="#Modal" onclick="MessValue('close')">Заказать звонок</button>                   
             </div> <!--Phone and button-->
