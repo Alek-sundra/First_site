@@ -84,7 +84,7 @@
           <div class="row align-items-center offer_name">
 
             <div class="col col-xs-12">
-              <span class="mastername">ЕКАТЕРИНА МИХЕЕВА</span><br>
+              <img src="img/offer_name.png" alt="Имя мастера Екатерина Михеева" class="mastername"><br>            
               <span class="about">ДИПЛОМИРОВАННЫЙ</span><br><hr class="blueline">
               <span class="about">МАСТЕР НОГТЕВОГО СЕРВИСА</span><br>
               <span class="slogan">Позабочусь о Ваших ручках и ножках<br>как о своих собственных</span>
@@ -95,7 +95,7 @@
             <div class="col col-xs-0 emtycol"></div>
 
             <div class="col col-xs-12">
-              <span class="sale">СКИДКА 15%</span><br>
+              <img src="img/offer.png" alt="Скидка" class="sale"><br>
               <span class="about">ДЛЯ ИМЕНИННИКОВ</span><br><hr class="blueline">                  
             </div>
           </div>
@@ -160,7 +160,7 @@
       <p class="ptitle">Услуги и цены</p>      
       <div class="row">
 
-        <div class="col-xl Serv">
+        <div class="col-12 col-xl-4 Serv">
           <div class="card Left">
             <img src="img/manicure.jpg" alt="маникюр">
             <span class="ServName">Маникюр</span>
@@ -211,7 +211,7 @@
           </div>
         </div>
 
-        <div class="col-xl Serv">
+        <div class="col-12 col-xl-4 Serv">
           <div class="card Central">
             <img src="img/pedicure.jpg" alt="педикюр">
             <span class="ServName">Педикюр</span>
@@ -262,7 +262,7 @@
           </div>
         </div>
 
-        <div class="col-xl Serv">
+        <div class="col-12 col-xl-4 Serv">
           <div class="card Right">
             <img src="img/grownails.jpg" alt="наращивание">
             <span class="ServName">Наращивание</span>
@@ -448,11 +448,21 @@
                 <img src="img/Prev.png" alt="Предыдущий">
               </a>
               <ol class="carousel-indicators">
-                <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselIndicators" data-slide-to="2"></li>
-                <li data-target="#carouselIndicators" data-slide-to="3"></li>
-                <li data-target="#carouselIndicators" data-slide-to="4"></li>
+                <li data-target="#carouselIndicators" data-slide-to="0" class="active">
+                  <div class="indicator-active"></div>
+                </li>                
+                <li data-target="#carouselIndicators" data-slide-to="1">
+                  <div class="indicator-active"></div>
+                </li>
+                <li data-target="#carouselIndicators" data-slide-to="2">
+                  <div class="indicator-active"></div>
+                </li>
+                <li data-target="#carouselIndicators" data-slide-to="3">
+                  <div class="indicator-active"></div>
+                </li>
+                <li data-target="#carouselIndicators" data-slide-to="4">
+                  <div class="indicator-active"></div>
+                </li>
               </ol>
               <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
                 <img src="img/Next.png" alt="Следующий">
@@ -549,14 +559,14 @@
             </div>
 
             <!--Phone and button-->
-            <div class="col-xl-3 col-lg-6 col-md-7 order-xl-3">
+            <div class="col-xl-4 col-lg-6 col-md-7 order-xl-3 footer-phone">
               <img src="img/number.png" alt="Номер телефона" class="callme"> 
               <!-- Button trigger modal -->
               <button type="button" class="ordercall" data-toggle="modal" data-target="#Modal" onclick="MessValue('close')">Заказать звонок</button>                   
             </div> <!--Phone and button-->
           
             <!--Navpanel-->
-            <div class="col-xl-7 col-lg-0 col-md-0 order-xl-2 navFooter">
+            <div class="col-xl-6 col-lg-0 col-md-0 order-xl-2 navFooter">
               <nav class="navbar navbar-expand-lg navbar-light">               
                 <div class="collapse navbar-collapse">
                   <a class="nav-link" href="#TopMain">Главная</a>
