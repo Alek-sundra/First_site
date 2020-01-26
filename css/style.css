@@ -44,10 +44,10 @@ img{
 .sale, .ServName{
   font-size: 28px;
 }
-.modal-body input, .sendbttn, .register, .mastername, .info span, .clientText span, .reference, .adress-title{
+.modal-body input, .sendbttn, .register, .info span, .clientText span, .reference, .adress-title{
   font-size: 24px;
 }
-.ordercall, .slogan, .info p, table{
+.ordercall, table{
   font-size: 14px; 
 }
 /*Navigation and introduction*/
@@ -197,22 +197,24 @@ img{
   margin: 0 0 0 1.5em;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(0, 81, 155, 0.4) 100%), #00FFE0;
 }
-.mastername{
-  font-weight: bold;
-  color: #00FFE0;
-}
 .about{  
   font-weight: bold;
   color: #FFFFFF;
-  line-height: 0;
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 26px;  
 }
 .slogan{
   color: #FFFFFF;
-  line-height: 0;
+  line-height: 1.5;
+}
+.mastername{
+  width: 381px;
+  margin-bottom: 12px;
 }
 .sale{
-  font-weight: bold;
-  color: #00FFE0;
+  width: 279px;
+  margin-bottom: 10px;
 }
 /*Advantage*/
 .forma{
@@ -227,9 +229,11 @@ img{
   max-width: 650px;
   max-height: 610px;
 }
+.info{
+  padding: 80px 20px !important;
+}
 .section div{
-  padding: 10px;
-  margin: 7px;
+  padding: 18.5px;
   border-radius: 50%;
   background-color: #FFFFFF;
 }
@@ -237,20 +241,25 @@ img{
   position: absolute; 
   background-color: #00FFE0;
   background-color: rgba(255, 255, 255, 0.4);
-  max-width: 120px;
+  width: 121px;
+  padding: 15px;
 }
 .section{
+  height: 106px;
   position: relative;
 }
 .info button{
-  margin-left: 10px;
-  margin-top: 50px;
-  margin-bottom: 10px;
+  margin-top: 57px;
 }
 .info p{
-  margin-top: 1em;
-  margin-left: 28%;
-  margin-bottom: 3px;
+  padding-top: 25px;
+  margin: 0;  
+  margin-left: 133px;
+  
+}
+.info span{
+  display: inline-block;
+  margin-bottom: 8px;
 }
 /*Service and price*/
 .card{
@@ -382,12 +391,12 @@ td:last-child{
 .carousel-inner{
   width: 100%
   height: 100%;
-  max-width: 640px;
+ /* max-width: 640px;*/
   max-height: 329px;
   box-shadow: 0 2px 8px rgba(255, 89, 119, 0.5);
 }
 .clientText{
-  margin-top: 92px;
+  margin-top: 85px;
   text-align: left;
   min-height: 201px;
   line-height: 27px;
@@ -401,29 +410,46 @@ td:last-child{
   display: flex;
   -webkit-justify-content: center;
   justify-content: center;
-  height: 24px;  
+  height: 41px;  
   margin-top: 40px;
 }
 .carousel-indicators{
   position: static;
-  height: 24px;
+  height: 41px;
   margin: 0;
+  padding-top: 4px;
 }
 .carousel-control-next, .carousel-control-prev{
   position: static;
-  width: 24px;
-  height: 24px; 
-  margin: 0 10px;
+  width: 33px;
+  height: 33px; 
+  margin: 4px 12px 0 12px;
 }
 .carousel-indicators li{
-  width: 20px;
-  height: 20px; 
+  width: 33px;
+  height: 33px; 
   border: solid 2px #00FFE0;
+  box-sizing: border-box;
   border-radius: 50%;  
-  margin: 0 10px;
+  margin: 0 8px;
+}
+.indicator-active {
+  display: none;
+  position: absolute;
+  width: 41px;
+  height: 41px;
+  border: 1px solid #00FFE0;
+  border-radius: 50%;
+  box-sizing: border-box;
+  margin-top: -4px;
+  margin-left: -4px;
 }
 .carousel-indicators .active {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(0, 81, 155, 0.4) 100%), #00FFE0; 
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(0, 81, 155, 0.4) 100%), #00FFE0;   
+  border: none; 
+}
+.carousel-indicators .active .indicator-active{
+  display: block;
 }
 /*Document*/
 .doc{
@@ -563,6 +589,9 @@ td:last-child{
 .topbttn:hover{
   background: #FFFFFF;
 }
+.footer .callme{
+  margin-left: 50px;
+}
 /*Экстрамалые девайсы («телефоны», < 576px)*/
 @media (max-width: 575.98px) { 
   .section>div, .imgborder{
@@ -595,6 +624,9 @@ td:last-child{
     text-align: center;
     margin-top: 0;
   } 
+  .carousel-control-next, .carousel-control-prev{
+    margin: 4px 0 0 0;
+  }
 }
 
 /*Малые девайсы («ландшафтные», < 768px)*/
@@ -633,5 +665,17 @@ td:last-child{
   }
   .navFooter{
     display: none;
+  }
+}
+@media (max-width: 1419.98px)
+{  
+  .footer-phone{
+    height: 70px;
+    margin-top: -18px;
+  }
+  .footer .ordercall{
+    margin-top: 5px;
+    margin-left: 50px;
+    margin-right: 70px;
   }
 }
